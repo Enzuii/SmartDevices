@@ -13,7 +13,7 @@ namespace Tests
     /// Prueba de las clases <see cref="Adapter"/> <see cref="Bulb"/> <see cref="WashingMachine"/>.
     /// </summary>
     [TestFixture]
-    public class TrainTests
+    public class Tests
     {
         
         private Plug plug1;
@@ -23,6 +23,9 @@ namespace Tests
         private ISmartDevice washingMachine1; 
         private ISmartDevice adapter1;
 
+        /// <summary>
+        /// Prueba prender el plug
+        /// </summary>
         [Test]
         public void turnOnPlug()
         {
@@ -31,6 +34,9 @@ namespace Tests
             adapter1.On();
             Assert.AreEqual("on", adapter1.GetStatus());
         }
+        /// <summary>
+        /// Prueba apagar el plug
+        /// </summary>
         [Test]
         public void turnOffPlug()
         {
@@ -41,6 +47,9 @@ namespace Tests
             Assert.AreEqual("off", adapter1.GetStatus());
         }
 
+        /// <summary>
+        /// Prueba prender el bulb
+        /// </summary>
         [Test]
         public void turnOnBulb()
         {
@@ -48,6 +57,9 @@ namespace Tests
             bulb1.On();
             Assert.AreEqual("on", bulb1.GetStatus());
         }
+        /// <summary>
+        /// Prueba prender la washing machine
+        /// </summary>
         [Test]
         public void turnOnWashingMachine()
         {

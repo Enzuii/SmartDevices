@@ -38,8 +38,6 @@ namespace ConsoleApplication
             Console.WriteLine($"Apagando el plug");
             adapter1.Off();
             Console.WriteLine($"Plug status: {adapter1.GetStatus()}");
-
-
         }
     }
 }

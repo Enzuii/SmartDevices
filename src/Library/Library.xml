@@ -4,6 +4,36 @@
         <name>Library</name>
     </assembly>
     <members>
+        <member name="T:AdapterExample.Adapter">
+            <summary>
+            Clase Adapter
+            </summary>
+        </member>
+        <member name="P:AdapterExample.Adapter.plug">
+            <summary>
+            Propiedad plug.
+            </summary>
+        </member>
+        <member name="M:AdapterExample.Adapter.#ctor(AdapterExample.Plug)">
+            <summary>
+            Constructor de Adapter.
+            </summary> 
+        </member>
+        <member name="M:AdapterExample.Adapter.On">
+            <summary>
+            Método prender estado.
+            </summary>
+        </member>
+        <member name="M:AdapterExample.Adapter.Off">
+            <summary>
+            Método apagar estado.
+            </summary>
+        </member>
+        <member name="M:AdapterExample.Adapter.GetStatus">
+            <summary>
+            Obtener el estado.
+            </summary>
+        </member>
         <member name="T:AdapterExample.Bulb">
             <summary>
             Una lámpara inteligente

@@ -4,9 +4,29 @@
         <name>LibraryTests</name>
     </assembly>
     <members>
-        <member name="T:Tests.TrainTests">
+        <member name="T:Tests.Tests">
             <summary>
             Prueba de las clases <see cref="T:AdapterExample.Adapter"/> <see cref="T:AdapterExample.Bulb"/> <see cref="T:AdapterExample.WashingMachine"/>.
+            </summary>
+        </member>
+        <member name="M:Tests.Tests.turnOnPlug">
+            <summary>
+            Prueba prender el plug
+            </summary>
+        </member>
+        <member name="M:Tests.Tests.turnOffPlug">
+            <summary>
+            Prueba apagar el plug
+            </summary>
+        </member>
+        <member name="M:Tests.Tests.turnOnBulb">
+            <summary>
+            Prueba prender el bulb
+            </summary>
+        </member>
+        <member name="M:Tests.Tests.turnOnWashingMachine">
+            <summary>
+            Prueba prender la washing machine
             </summary>
         </member>
     </members>
