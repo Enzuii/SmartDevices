@@ -5,7 +5,7 @@
 //--------------------------------------------------------------------------------
 
 using System;
-using ClassLibrary;
+using AdapterExample;
 
 namespace ConsoleApplication
 {
@@ -19,9 +19,27 @@ namespace ConsoleApplication
         /// </summary>
         public static void Main()
         {
-            var train = new Train();
-            train.StartEngines();
-            Console.WriteLine("Hello World!");
+            Plug plug1 = new Plug("1");
+            ISmartDevice bulb1 = new Bulb("1");
+            ISmartDevice washingMachine1 = new WashingMachine("1");
+            ISmartDevice adapter1 = new Adapter(plug1);          
+            Console.WriteLine($"Plug status: {adapter1.GetStatus()}");
+            Console.WriteLine($"Prendiendo el plug");
+            adapter1.On();
+            Console.WriteLine($"Plug status: {adapter1.GetStatus()}");
+            Console.WriteLine($"Bulb status: {bulb1.GetStatus()}");
+            Console.WriteLine($"Prendiendo la bulb");
+            bulb1.On();
+            Console.WriteLine($"Bulb status: {bulb1.GetStatus()}");
+            Console.WriteLine($"Washing machine status: {washingMachine1.GetStatus()}");
+            Console.WriteLine($"Prendiendo la washing machine");
+            washingMachine1.On();
+            Console.WriteLine($"Washing machine status: {washingMachine1.GetStatus()}");
+            Console.WriteLine($"Apagando el plug");
+            adapter1.Off();
+            Console.WriteLine($"Plug status: {adapter1.GetStatus()}");
+
+
         }
     }
 }
